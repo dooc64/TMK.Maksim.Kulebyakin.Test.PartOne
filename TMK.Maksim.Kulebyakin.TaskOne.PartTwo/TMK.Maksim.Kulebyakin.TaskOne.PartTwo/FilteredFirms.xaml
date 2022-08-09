@@ -1,0 +1,35 @@
+﻿<Window x:Class="TMK.Maksim.Kulebyakin.TaskOne.PartTwo.FilteredFirms"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TMK.Maksim.Kulebyakin.TaskOne.PartTwo"
+        mc:Ignorable="d"
+        Title="FilteredFirms" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="FirmTable" Grid.RowSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="Id: " Grid.Column="1" Grid.Row="1"/>
+                        <TextBlock Text="{Binding FirmId}" Grid.Column="2" Margin="100,0,0,0" Grid.Row="1"/>
+                        <TextBlock Text="Firm Name: " Grid.Column="1" />
+                        <TextBlock Text="{Binding FirmName}" Grid.Column="2" Margin="100,0,0,0"/>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition /> 
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
