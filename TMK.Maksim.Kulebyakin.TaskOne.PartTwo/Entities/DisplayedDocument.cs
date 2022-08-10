@@ -13,7 +13,6 @@ namespace Entities
     {
         private int _year;
 
-        [Display(Name = "Customer ID", ShortName = "Customer ID")]
         public int Year { get => _year;
             set
             {
@@ -50,7 +49,7 @@ namespace Entities
         public int January { get => _january; set
             {
                 _january = value;
-                OnPropertyChanged("Январь");
+                OnPropertyChanged("January");
             }
         }
 
@@ -106,7 +105,7 @@ namespace Entities
         public int August { get => _august; set
             {
                 _august = value;
-                OnPropertyChanged("Август");
+                OnPropertyChanged("August");
             }
         }
 
@@ -114,7 +113,7 @@ namespace Entities
         public int September { get => _september; set
             {
                 _september = value;
-                OnPropertyChanged("Сентябрь");
+                OnPropertyChanged("September");
             }
         }
 
@@ -122,7 +121,7 @@ namespace Entities
         public int October { get => _october; set
             {
                 _october = value;
-                OnPropertyChanged("Октябрь");
+                OnPropertyChanged("October");
             }
         }
 
@@ -130,7 +129,7 @@ namespace Entities
         public int November { get => _november; set
             {
                 _november = value;
-                OnPropertyChanged("Ноябрь");
+                OnPropertyChanged("November");
             }
         }
 
@@ -138,7 +137,7 @@ namespace Entities
         public int December { get => _december; set
             {
                 _december = value;
-                OnPropertyChanged("Декабрь");
+                OnPropertyChanged("December");
             }
         }
 
