@@ -10,6 +10,9 @@
         
     <Grid>
         <Button Click="GetFirms" Height="50" Width="200" Margin="300,117,300,117" Grid.RowSpan="2">Get Firms</Button>
+        <Button Click="GetDocuments" Height="50" Width="200" Margin="-600,117,300,117" Grid.RowSpan="2">Get Documents</Button>
+        <TextBox Name="FirmIdInput" TextWrapping="Wrap" Text="" Height="15" Width="120" Margin="-400,10,518,402"/>
+        <TextBlock TextWrapping="Wrap" Height="15" Width="150" Text="Firm ID for document" Margin="-400,37,488,372"/>
         <TextBox Name="FirmNameInput" TextWrapping="Wrap" Text="" Height="15" Width="120" RenderTransformOrigin="0.5,0.5" Margin="162,10,518,402"/>
         <TextBlock TextWrapping="Wrap" Height="15" Width="150" Text="Firm Name" Margin="162,37,488,372"/>
         <TextBox Name="JurCityInput" TextWrapping="Wrap" Text="" Height="15" Width="120" RenderTransformOrigin="0.5,0.5" Margin="340,14,340,405" />
