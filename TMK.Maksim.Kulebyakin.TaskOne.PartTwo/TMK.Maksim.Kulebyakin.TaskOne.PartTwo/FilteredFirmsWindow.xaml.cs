@@ -17,9 +17,9 @@ namespace TMK.Maksim.Kulebyakin.TaskOne.PartTwo
     /// <summary>
     /// Interaction logic for FilteredFirms.xaml
     /// </summary>
-    public partial class FilteredFirms : Window
+    public partial class FilteredFirmsWindow : Window
     {
-        public FilteredFirms()
+        public FilteredFirmsWindow()
         {
             InitializeComponent();
         }
